@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		28F33BD62A3A42D1004F47F7 /* SwiftyShaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BD52A3A42D1004F47F7 /* SwiftyShaderApp.swift */; };
-		28F33BD82A3A42D1004F47F7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BD72A3A42D1004F47F7 /* Item.swift */; };
-		28F33BDA2A3A42D1004F47F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BD92A3A42D1004F47F7 /* ContentView.swift */; };
 		28F33BDC2A3A42D2004F47F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F33BDB2A3A42D2004F47F7 /* Assets.xcassets */; };
 		28F33BE02A3A42D2004F47F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28F33BDF2A3A42D2004F47F7 /* Preview Assets.xcassets */; };
 		28F33BEB2A3A42D3004F47F7 /* SwiftyShaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BEA2A3A42D3004F47F7 /* SwiftyShaderTests.swift */; };
 		28F33BF52A3A42D3004F47F7 /* SwiftyShaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BF42A3A42D3004F47F7 /* SwiftyShaderUITests.swift */; };
 		28F33BF72A3A42D3004F47F7 /* SwiftyShaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33BF62A3A42D3004F47F7 /* SwiftyShaderUITestsLaunchTests.swift */; };
+		28F33C042A3A42EC004F47F7 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C032A3A42EC004F47F7 /* Shaders.metal */; };
+		28F33C062A3A4322004F47F7 /* SwiftyShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C052A3A4322004F47F7 /* SwiftyShaderView.swift */; };
+		28F33C082A3A55A1004F47F7 /* View+ColorEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C072A3A55A1004F47F7 /* View+ColorEffect.swift */; };
+		28F33C0A2A3A55C0004F47F7 /* View+LayerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C092A3A55C0004F47F7 /* View+LayerEffect.swift */; };
+		28F33C0C2A3A55D3004F47F7 /* AquaShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C0B2A3A55D3004F47F7 /* AquaShaderView.swift */; };
+		28F33C0E2A3A55DE004F47F7 /* GradientifyShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C0D2A3A55DE004F47F7 /* GradientifyShaderView.swift */; };
+		28F33C102A3A55EE004F47F7 /* RemoveRedShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C0F2A3A55EE004F47F7 /* RemoveRedShaderView.swift */; };
+		28F33C162A3A586F004F47F7 /* GradientSubstractShaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F33C152A3A586F004F47F7 /* GradientSubstractShaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +43,6 @@
 /* Begin PBXFileReference section */
 		28F33BD22A3A42D1004F47F7 /* SwiftyShader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyShader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F33BD52A3A42D1004F47F7 /* SwiftyShaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyShaderApp.swift; sourceTree = "<group>"; };
-		28F33BD72A3A42D1004F47F7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		28F33BD92A3A42D1004F47F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28F33BDB2A3A42D2004F47F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F33BDD2A3A42D2004F47F7 /* SwiftyShader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftyShader.entitlements; sourceTree = "<group>"; };
 		28F33BDF2A3A42D2004F47F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 		28F33BF02A3A42D3004F47F7 /* SwiftyShaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyShaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28F33BF42A3A42D3004F47F7 /* SwiftyShaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyShaderUITests.swift; sourceTree = "<group>"; };
 		28F33BF62A3A42D3004F47F7 /* SwiftyShaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyShaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28F33C032A3A42EC004F47F7 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		28F33C052A3A4322004F47F7 /* SwiftyShaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyShaderView.swift; sourceTree = "<group>"; };
+		28F33C072A3A55A1004F47F7 /* View+ColorEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ColorEffect.swift"; sourceTree = "<group>"; };
+		28F33C092A3A55C0004F47F7 /* View+LayerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+LayerEffect.swift"; sourceTree = "<group>"; };
+		28F33C0B2A3A55D3004F47F7 /* AquaShaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaShaderView.swift; sourceTree = "<group>"; };
+		28F33C0D2A3A55DE004F47F7 /* GradientifyShaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientifyShaderView.swift; sourceTree = "<group>"; };
+		28F33C0F2A3A55EE004F47F7 /* RemoveRedShaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRedShaderView.swift; sourceTree = "<group>"; };
+		28F33C152A3A586F004F47F7 /* GradientSubstractShaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientSubstractShaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +110,14 @@
 		28F33BD42A3A42D1004F47F7 /* SwiftyShader */ = {
 			isa = PBXGroup;
 			children = (
+				28F33C132A3A5643004F47F7 /* View+Shader */,
+				28F33C112A3A5617004F47F7 /* ShaderViews */,
 				28F33BD52A3A42D1004F47F7 /* SwiftyShaderApp.swift */,
-				28F33BD72A3A42D1004F47F7 /* Item.swift */,
-				28F33BD92A3A42D1004F47F7 /* ContentView.swift */,
 				28F33BDB2A3A42D2004F47F7 /* Assets.xcassets */,
 				28F33BDD2A3A42D2004F47F7 /* SwiftyShader.entitlements */,
 				28F33BE12A3A42D2004F47F7 /* Info.plist */,
 				28F33BDE2A3A42D2004F47F7 /* Preview Content */,
+				28F33C032A3A42EC004F47F7 /* Shaders.metal */,
 			);
 			path = SwiftyShader;
 			sourceTree = "<group>";
@@ -132,6 +145,43 @@
 				28F33BF62A3A42D3004F47F7 /* SwiftyShaderUITestsLaunchTests.swift */,
 			);
 			path = SwiftyShaderUITests;
+			sourceTree = "<group>";
+		};
+		28F33C112A3A5617004F47F7 /* ShaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				28F33C142A3A5862004F47F7 /* LayerEffectShaderViews */,
+				28F33C052A3A4322004F47F7 /* SwiftyShaderView.swift */,
+				28F33C122A3A5629004F47F7 /* ColorEffectShaderViews */,
+			);
+			path = ShaderViews;
+			sourceTree = "<group>";
+		};
+		28F33C122A3A5629004F47F7 /* ColorEffectShaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				28F33C0B2A3A55D3004F47F7 /* AquaShaderView.swift */,
+				28F33C0D2A3A55DE004F47F7 /* GradientifyShaderView.swift */,
+				28F33C0F2A3A55EE004F47F7 /* RemoveRedShaderView.swift */,
+			);
+			path = ColorEffectShaderViews;
+			sourceTree = "<group>";
+		};
+		28F33C132A3A5643004F47F7 /* View+Shader */ = {
+			isa = PBXGroup;
+			children = (
+				28F33C072A3A55A1004F47F7 /* View+ColorEffect.swift */,
+				28F33C092A3A55C0004F47F7 /* View+LayerEffect.swift */,
+			);
+			path = "View+Shader";
+			sourceTree = "<group>";
+		};
+		28F33C142A3A5862004F47F7 /* LayerEffectShaderViews */ = {
+			isa = PBXGroup;
+			children = (
+				28F33C152A3A586F004F47F7 /* GradientSubstractShaderView.swift */,
+			);
+			path = LayerEffectShaderViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F33BD82A3A42D1004F47F7 /* Item.swift in Sources */,
+				28F33C042A3A42EC004F47F7 /* Shaders.metal in Sources */,
+				28F33C0C2A3A55D3004F47F7 /* AquaShaderView.swift in Sources */,
+				28F33C0E2A3A55DE004F47F7 /* GradientifyShaderView.swift in Sources */,
+				28F33C062A3A4322004F47F7 /* SwiftyShaderView.swift in Sources */,
+				28F33C102A3A55EE004F47F7 /* RemoveRedShaderView.swift in Sources */,
+				28F33C0A2A3A55C0004F47F7 /* View+LayerEffect.swift in Sources */,
 				28F33BD62A3A42D1004F47F7 /* SwiftyShaderApp.swift in Sources */,
-				28F33BDA2A3A42D1004F47F7 /* ContentView.swift in Sources */,
+				28F33C082A3A55A1004F47F7 /* View+ColorEffect.swift in Sources */,
+				28F33C162A3A586F004F47F7 /* GradientSubstractShaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,8 +13,7 @@ struct SwiftyShaderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SwiftyShaderView()
         }
-        .modelContainer(for: Item.self)
     }
 }
